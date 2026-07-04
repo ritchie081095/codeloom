@@ -18,7 +18,7 @@ export const profile = {
   location: 'Davao City, Davao Del Sur, Philippines',
   phone: '+63 994 710 1127',
   phoneHref: 'tel:+639947101127',
-  email: 'nalamritchie@gmail.com',
+  email: 'codeloomfl@gmail.com',
   yearsExperience: '6+',
   summary:
     "We're a small, dedicated software team led by Ritchie Nalam, building scalable web and mobile applications. With over 6 years of experience across Laravel, PHP, Vue.js, React, React Native, WordPress, and TypeScript, we turn complex challenges into clean, user-friendly software that helps businesses grow.",
@@ -27,7 +27,7 @@ export const profile = {
 export const stats = [
   { value: '6+', label: 'Years Experience' },
   { value: '11+', label: 'Key Projects' },
-  { value: '3', label: 'Team Members' },
+  { value: '4', label: 'Team Members' },
   { value: '13+', label: 'Technologies' },
 ];
 
@@ -156,6 +156,12 @@ export const team = [
     name: 'Ritchie Nalam',
     role: 'Founder / Full-Stack Developer',
     image: '/avatar.png',
+  },
+  {
+    name: 'Marjun Ravanes',
+    role: 'Lead Developer',
+    // Drop a photo here to replace the initials avatar: public/marjun.png
+    image: '/marjun.png',
   },
   {
     name: 'Krissha Kate Rubio',

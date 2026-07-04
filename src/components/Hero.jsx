@@ -3,7 +3,7 @@ import { FiMail, FiPhone, FiMapPin, FiArrowDown, FiUsers } from 'react-icons/fi'
 import { profile, stats } from '../data/resume';
 import Typewriter from './Typewriter';
 import NetworkGlobe from './NetworkGlobe';
-import Avatar from './Avatar';
+import Logo from './Logo';
 
 const container = {
   hidden: {},
@@ -73,8 +73,8 @@ export default function Hero() {
         <motion.div className="hero__aside" variants={item}>
           <div className="hero__avatar">
             <div className="hero__avatar-ring" />
-            <div className="hero__avatar-inner">
-              <Avatar />
+            <div className="hero__avatar-inner hero__avatar-inner--logo">
+              <Logo className="hero__logo" />
             </div>
           </div>
           <div className="hero__stats">
