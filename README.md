@@ -1,29 +1,29 @@
-# Ritchie P. Nalam — Resume Website
+# Codeloom — Team Website
 
-A clean, animated, interactive personal resume site built with **React + Vite** and **Framer Motion**.
+A clean, animated one-page site for **Codeloom**, a small web & mobile development team led by Ritchie Nalam. Built with **React + Vite** and **Framer Motion**.
 
 ## Features
-- Sticky navbar with **scrollspy** (active-section highlight) + smooth scrolling
-- Animated hero with **typing role effect**, gradient blobs, and a live stats panel
-- Scroll-reveal animations on every section (Framer Motion)
-- **Animated skill bars**, hover-reactive project cards, timeline experience
-- **Dark / light theme toggle** (remembers your choice)
-- Scroll-progress bar, fully responsive, respects `prefers-reduced-motion`
+- Sticky navbar with scrollspy + smooth scrolling and an SVG logo mark
+- Animated hero with rotating services, a rotating **network globe** background, and stats
+- **Our Tech Stack** — categorized brand-icon grid (Frontend, Backend, DevOps & Cloud, Design & CMS, AI Tools)
+- **Our Work** — project cards
+- **Our Team** — member cards with photos (auto-fallback to initials)
+- Dark / light theme toggle, scroll-progress bar, fully responsive, reduced-motion aware
 
 ## Run it
 
 ```bash
 npm install      # first time only
-npm run dev      # start dev server → http://localhost:5173
-npm run build    # production build into /dist
-npm run preview  # preview the production build
+npm run dev      # http://localhost:5173
+npm run build    # production build → /dist
+npm run preview  # preview the build
 ```
 
 ## Customize
-
-- **All content** lives in [`src/data/resume.js`](src/data/resume.js) — edit text, jobs, skills (and their %), projects, education, and references there. The UI updates automatically.
-- **Add a real photo:** in [`src/components/Hero.jsx`](src/components/Hero.jsx), replace the `.hero__avatar-inner` initials with an `<img src="/me.jpg" alt="Ritchie" />` and drop the image in `public/`.
-- **Colors/theme:** tweak the accent variables at the top of [`src/index.css`](src/index.css) (`--accent-1`, `--accent-2`, `--accent-3`).
+- **Content** lives in [`src/data/resume.js`](src/data/resume.js) — team name, members, projects, contact.
+- **Tech stack** icons/categories are in [`src/components/Skills.jsx`](src/components/Skills.jsx).
+- **Team photos:** `public/avatar.png`, `public/krissha.png`, `public/john.png`.
+- **Logo:** the vector mark is [`src/components/Logo.jsx`](src/components/Logo.jsx); colors/accents in [`src/index.css`](src/index.css).
 
 ## Deploy
-Any static host works (Vercel, Netlify, GitHub Pages). Build with `npm run build` and serve the `dist/` folder.
+Any static host (Vercel, Netlify, Cloudflare Pages). Build with `npm run build` and serve `dist/`.
