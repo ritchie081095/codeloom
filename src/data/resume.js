@@ -114,6 +114,8 @@ export const skillGroups = [
 ];
 
 export const projects = [
+  { name: 'OSMS', tags: ['Laravel', 'Vue.js', 'MySQL'], featured: true },
+  { name: 'AIS', tags: ['Laravel', 'MySQL'], featured: true },
   { name: 'Entraguard Security & Access Platform', tags: ['React Native', 'Laravel', 'Node.js'], featured: true },
   { name: 'Enterprise Resource Planning (ERP) System', tags: ['Laravel', 'Vue.js', 'MySQL'] },
   { name: 'Point of Sale (POS) System', tags: ['PHP', 'Mobile App'] },
